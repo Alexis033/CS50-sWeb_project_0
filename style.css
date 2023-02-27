@@ -1,0 +1,114 @@
+body {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.links {
+  margin: 10px 0;
+  text-align: end;
+}
+
+.links a {
+  margin-right: 10px;
+  outline: none;
+  text-decoration: none;
+  color: #000000;
+}
+
+.links a:hover {
+  text-decoration: underline 2px;
+}
+
+.container {
+  width: 100%;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.advance {
+  margin-left: 40px;
+  align-items: start;
+}
+
+.container h1 {
+  font-size: 85px;
+  margin: 20px;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    blue 0% 26%,
+    red 26% 42%,
+    orange 42% 60%,
+    blue 60% 76%,
+    green 76% 85%,
+    red 85% 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.container h2 {
+  margin-bottom: 40px;
+  color: rgb(243, 2, 2);
+  width: 100%;
+  text-align: center;
+}
+
+.container form {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.container form.advance {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+label {
+  flex-basis: 30%;
+}
+.input {
+  width: 50%;
+  height: 40px;
+  border: 1px solid #00000094;
+  border-radius: 10000000px;
+  padding-left: 10px;
+  flex-basis: 100%;
+}
+
+form.advance .input {
+  border-radius: 5px;
+  flex-basis: 60%;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.container .btn {
+  width: 135px;
+  height: 40px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: 0px solid;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+form.advance .btn {
+  margin-top: 20px;
+  margin-left: auto;
+  background-color: #4d90fe;
+  color: white;
+}
